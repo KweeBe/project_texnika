@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D332918F-9EBA-460A-B755-7BE54DCCD112}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>texnika</RootNamespace>
+    <AssemblyName>texnika</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\texnika.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pc.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.3.6.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlBackup.NET.2.3.6.1\lib\net452\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\HistoriTexMerop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistoriTexMerop.Designer.cs">
+      <DependentUpon>HistoriTexMerop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass\ImpAndExp.cs" />
+    <Compile Include="MyClass\Documents.cs" />
+    <Compile Include="Forms\EditPrichina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditPrichina.Designer.cs">
+      <DependentUpon>EditPrichina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MeropriyatiyaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MeropriyatiyaForm.Designer.cs">
+      <DependentUpon>MeropriyatiyaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass\Email.cs" />
+    <Compile Include="Forms\AddEditRaspoloj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditRaspoloj.Designer.cs">
+      <DependentUpon>AddEditRaspoloj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditTexnikInAkt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditTexnikInAkt.Designer.cs">
+      <DependentUpon>AddEditTexnikInAkt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddTexInMerop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTexInMerop.Designer.cs">
+      <DependentUpon>AddTexInMerop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditTexnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditTexnik.Designer.cs">
+      <DependentUpon>AddEditTexnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditPostavka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditPostavka.Designer.cs">
+      <DependentUpon>AddEditPostavka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditDogovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditDogovor.Designer.cs">
+      <DependentUpon>AddEditDogovor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DogovorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DogovorForm.Designer.cs">
+      <DependentUpon>DogovorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditPostavhik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditPostavhik.Designer.cs">
+      <DependentUpon>AddEditPostavhik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditMeropriyatiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditMeropriyatiya.Designer.cs">
+      <DependentUpon>AddEditMeropriyatiya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditSotrudnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditSotrudnik.Designer.cs">
+      <DependentUpon>AddEditSotrudnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditVidTexniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditVidTexniki.Designer.cs">
+      <DependentUpon>AddEditVidTexniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SotrudnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SotrudnikForm.Designer.cs">
+      <DependentUpon>SotrudnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PostavshikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PostavshikForm.Designer.cs">
+      <DependentUpon>PostavshikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpisanieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpisanieForm.Designer.cs">
+      <DependentUpon>SpisanieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpravochSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpravochSistema.Designer.cs">
+      <DependentUpon>SpravochSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TablesClass\Raspoloj.cs" />
+    <Compile Include="Forms\RaspolojForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RaspolojForm.Designer.cs">
+      <DependentUpon>RaspolojForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesClass\Postavka.cs" />
+    <Compile Include="Forms\PostavkaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PostavkaForm.Designer.cs">
+      <DependentUpon>PostavkaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesClass\AktSpisaniya.cs" />
+    <Compile Include="TablesClass\Dogovors.cs" />
+    <Compile Include="TablesClass\Sotrudniks.cs" />
+    <Compile Include="TablesClass\Postavshik.cs" />
+    <Compile Include="TablesClass\Meropriyatiya.cs" />
+    <Compile Include="MyClass\DBconnect.cs" />
+    <Compile Include="Forms\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TablesClass\VidTexniki.cs" />
+    <Compile Include="Forms\VidTexnikiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VidTexnikiForm.Designer.cs">
+      <DependentUpon>VidTexnikiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesClass\Texniks.cs" />
+    <Compile Include="TablesClass\TexnikaInMerop.cs" />
+    <Compile Include="TablesClass\TexnikaInAkt.cs" />
+    <Compile Include="Forms\TexniksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TexniksView.Designer.cs">
+      <DependentUpon>TexniksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Zastavka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Zastavka.Designer.cs">
+      <DependentUpon>Zastavka.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\EditPrichina.resx">
+      <DependentUpon>EditPrichina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditRaspoloj.resx">
+      <DependentUpon>AddEditRaspoloj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditTexnikInAkt.resx">
+      <DependentUpon>AddEditTexnikInAkt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTexInMerop.resx">
+      <DependentUpon>AddTexInMerop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditTexnik.resx">
+      <DependentUpon>AddEditTexnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditPostavka.resx">
+      <DependentUpon>AddEditPostavka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditDogovor.resx">
+      <DependentUpon>AddEditDogovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DogovorForm.resx">
+      <DependentUpon>DogovorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditPostavhik.resx">
+      <DependentUpon>AddEditPostavhik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditMeropriyatiya.resx">
+      <DependentUpon>AddEditMeropriyatiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditSotrudnik.resx">
+      <DependentUpon>AddEditSotrudnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditVidTexniki.resx">
+      <DependentUpon>AddEditVidTexniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VidTexnikiForm.resx">
+      <DependentUpon>VidTexnikiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PostavshikForm.resx">
+      <DependentUpon>PostavshikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PostavkaForm.resx">
+      <DependentUpon>PostavkaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MeropriyatiyaForm.resx">
+      <DependentUpon>MeropriyatiyaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HistoriTexMerop.resx">
+      <DependentUpon>HistoriTexMerop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SotrudnikForm.resx">
+      <DependentUpon>SotrudnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpisanieForm.resx">
+      <DependentUpon>SpisanieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RaspolojForm.resx">
+      <DependentUpon>RaspolojForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TexniksView.resx">
+      <DependentUpon>TexniksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Zastavka.resx">
+      <DependentUpon>Zastavka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpravochSistema.resx">
+      <DependentUpon>SpravochSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

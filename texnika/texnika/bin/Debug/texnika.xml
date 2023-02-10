@@ -1,0 +1,1009 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>texnika</name>
+    </assembly>
+    <members>
+        <member name="F:texnika.HistoriTexMerop.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.HistoriTexMerop.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.HistoriTexMerop.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:texnika.ImpAndExp.Backup(System.String)">
+            <summary>
+            Копирования базы данных
+            </summary>
+            <param name="fName"></param>
+        </member>
+        <member name="M:texnika.ImpAndExp.Restore(System.String)">
+            <summary>
+            Восстановления базы данных
+            </summary>
+            <param name="fName"></param>
+        </member>
+        <member name="M:texnika.ImpAndExp.CreateBD">
+            <summary>
+            Создание базы данных
+            </summary>
+        </member>
+        <member name="M:texnika.Documents.AktSpisaniya(System.String,System.String,System.String)">
+            <summary>
+            Формирование документа акт списания
+            </summary>
+            <param name="id"></param>
+            <param name="data"></param>
+            <param name="fname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Documents.TexnikaImeysh(System.String)">
+            <summary>
+            Формирофание документа имеющеяся техника в организации
+            </summary>
+            <param name="fname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Documents.NameAndKol(System.String@,System.String@)">
+            <summary>
+            Получение виды техники и количество техники по виду
+            </summary>
+            <param name="name"></param>
+            <param name="kolvo"></param>
+        </member>
+        <member name="M:texnika.Documents.TexnikaSpis(System.String,System.String,System.String)">
+            <summary>
+            Формирофание списаной техники за отчетный период
+            </summary>
+            <param name="dataOt"></param>
+            <param name="dataDo"></param>
+            <param name="fname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Documents.Merop(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Формирование документа мероприятие
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="data"></param>
+            <param name="time"></param>
+            <param name="kab"></param>
+            <param name="fname"></param>
+            <returns></returns>
+        </member>
+        <member name="F:texnika.EditPrichina.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.EditPrichina.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.EditPrichina.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.MeropriyatiyaForms.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.MeropriyatiyaForms.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.MeropriyatiyaForms.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:texnika.Email.CheckEmail(System.String)">
+            <summary>
+            Проверка Email на валидность
+            </summary>
+            <param name="em"></param>
+            <returns></returns>
+        </member>
+        <member name="F:texnika.AddEditRaspoloj.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditRaspoloj.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditRaspoloj.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditTexnikInAkt.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditTexnikInAkt.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditTexnikInAkt.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddTexInMerop.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddTexInMerop.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddTexInMerop.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditTexnik.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditTexnik.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditTexnik.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditPostavka.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditPostavka.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditPostavka.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditDogovor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditDogovor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditDogovor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.DogovorForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.DogovorForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.DogovorForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditPostavhik.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditPostavhik.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditPostavhik.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditMeropriyatiya.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditMeropriyatiya.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditMeropriyatiya.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditSotrudnik.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditSotrudnik.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditSotrudnik.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.AddEditVidTexniki.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.AddEditVidTexniki.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.AddEditVidTexniki.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.SotrudnikForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.SotrudnikForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.SotrudnikForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.PostavshikForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.PostavshikForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.PostavshikForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.SpisanieForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.SpisanieForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.SpisanieForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.SpravochSistema.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.SpravochSistema.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.SpravochSistema.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.Settings.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.Settings.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.Settings.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:texnika.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:texnika.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:texnika.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="M:texnika.Raspoloj.View(System.String)">
+            <summary>
+            Вывод расположения
+            </summary>
+            <param name="tex"></param>
+        </member>
+        <member name="M:texnika.Raspoloj.ViewVid(System.String)">
+            <summary>
+            История расположения
+            </summary>
+            <param name="vid"></param>
+        </member>
+        <member name="M:texnika.Raspoloj.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="idTex"></param>
+            <param name="kab"></param>
+            <param name="sotr"></param>
+            <param name="dataYst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.Edit(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Изменение
+            </summary>
+            <param name="nomer"></param>
+            <param name="idTex"></param>
+            <param name="kab"></param>
+            <param name="sotr"></param>
+            <param name="dataYst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.Delete(System.String)">
+            <summary>
+            Удаление
+            </summary>
+            <param name="nomer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.DataYdaleniya(System.String,System.String)">
+            <summary>
+            Изменение даты удаления 
+            </summary>
+            <param name="idtex"></param>
+            <param name="dat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.DataYdaleniya(System.String,System.String,System.String)">
+            <summary>
+            Изменение даты удаленя когда ее убрали
+            </summary>
+            <param name="idtex"></param>
+            <param name="dat"></param>
+            <param name="datOld"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.DataYdaleniyaIsNull(System.String,System.String)">
+            <summary>
+            Изменение даты удаления на нул
+            </summary>
+            <param name="idtex"></param>
+            <param name="dat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.DataYdaleniyaYvolSotr(System.String,System.String)">
+            <summary>
+            Изменение даты удаления при увольнении сотрудника
+            </summary>
+            <param name="sotr"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Raspoloj.NaSklad(System.String,System.String)">
+            <summary>
+            изменение даты удалени
+            </summary>
+            <param name="nomer"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="F:texnika.RaspolojForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.RaspolojForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.RaspolojForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:texnika.Postavka.View">
+            <summary>
+            Вывод поставок
+            </summary>
+        </member>
+        <member name="M:texnika.Postavka.Add(System.String,System.String)">
+            <summary>
+            Добавление поставки
+            </summary>
+            <param name="id"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Postavka.Edit(System.String,System.String,System.String)">
+            <summary>
+            Изменение поставки
+            </summary>
+            <param name="id"></param>
+            <param name="postav"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Postavka.Delete(System.String)">
+            <summary>
+            Удаление поставки
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="F:texnika.PostavkaForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.PostavkaForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.PostavkaForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:texnika.AktSpisaniya.View">
+            <summary>
+            Выывод актов списания
+            </summary>
+        </member>
+        <member name="M:texnika.AktSpisaniya.View(System.String,System.String)">
+            <summary>
+            Вывод актов списания за период
+            </summary>
+            <param name="dataOt"></param>
+            <param name="dataDo"></param>
+        </member>
+        <member name="M:texnika.AktSpisaniya.Add(System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:texnika.AktSpisaniya.Delete(System.String)">
+            <summary>
+            Удаление
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.AktSpisaniya.Statys(System.String,System.String)">
+            <summary>
+            Проверка статуса акта списания
+            </summary>
+            <param name="id"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Dogovors.View(System.String)">
+            <summary>
+            Вывод договоров выбранного поставщика
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.Dogovors.DogovorStatys(System.String)">
+            <summary>
+            Проверка действия договора
+            </summary>
+            <param name="idPostav"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Dogovors.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="idPostav"></param>
+            <param name="dataZakl"></param>
+            <param name="dataNachala"></param>
+            <param name="dataOkon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Dogovors.Delete(System.String)">
+            <summary>
+            Удаление
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Dogovors.Rastorgnyt(System.String,System.String)">
+            <summary>
+            Расторжение
+            </summary>
+            <param name="id"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Dogovors.Edit(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Изменение договора
+            </summary>
+            <param name="id"></param>
+            <param name="dataZakl"></param>
+            <param name="dataNachala"></param>
+            <param name="dataOkon"></param>
+            <param name="idPostav"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Dogovors.ProverkaStatysa(System.String,System.String)">
+            <summary>
+            Проверка договора
+            </summary>
+            <param name="id"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Sotrudniks.View(System.String,System.String)">
+            <summary>
+            Вывод сотрудников
+            </summary>
+        </member>
+        <member name="M:texnika.Sotrudniks.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="fio"></param>
+            <param name="doljnost"></param>
+            <param name="telefon"></param>
+            <param name="adres"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Sotrudniks.Yvolnenie(System.String)">
+            <summary>
+            Увольнение
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.Sotrudniks.Vozvrat(System.String)">
+            <summary>
+            Возврат
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.Sotrudniks.Edit(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Изменение
+            </summary>
+            <param name="id"></param>
+            <param name="fio"></param>
+            <param name="doljnost"></param>
+            <param name="telefon"></param>
+            <param name="adres"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Sotrudniks.ViewCombobox">
+            <summary>
+            Вывод сотрудников в комбобокс
+            </summary>
+        </member>
+        <member name="M:texnika.Postavshik.View(System.String)">
+            <summary>
+            Вывод поставщиков
+            </summary>
+        </member>
+        <member name="M:texnika.Postavshik.Add(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление нового поставщика
+            </summary>
+            <param name="name">название</param>
+            <param name="adress">адрес</param>
+            <param name="email">почта</param>
+            <param name="telefon">телфон</param>
+            <param name="kontaktLico">контактное лицо</param>
+        </member>
+        <member name="M:texnika.Postavshik.Delete(System.String)">
+            <summary>
+            Удаление информации о поставщике
+            </summary>
+            <param name="id">id поставщика</param>
+        </member>
+        <member name="M:texnika.Postavshik.Edit(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Изменение информации о поставщике
+            </summary>
+            <param name="id">id поставщика</param>
+            <param name="name">название</param>
+            <param name="adress">адрес</param>
+            <param name="email">почта</param>
+            <param name="telefon">телфон</param>
+            <param name="kontaktLico">контактное лицо</param>
+        </member>
+        <member name="M:texnika.Postavshik.ViewCombobox(System.String)">
+            <summary>
+            Вывод поставщиков в комбобокс
+            </summary>
+        </member>
+        <member name="M:texnika.Meropriyatiya.View">
+            <summary>
+            Вывод мероприятий
+            </summary>
+        </member>
+        <member name="M:texnika.Meropriyatiya.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление нового мероприятия
+            </summary>
+            <param name="name">название</param>
+            <param name="data">дата</param>
+            <param name="vremya">время</param>
+            <param name="kabinet">кабинет</param>
+        </member>
+        <member name="M:texnika.Meropriyatiya.Delete(System.String)">
+            <summary>
+            Удаление мероприятия
+            </summary>
+            <param name="id">id мероприятия</param>
+        </member>
+        <member name="M:texnika.Meropriyatiya.Edit(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Изменения информации о мероприятии
+            </summary>
+            <param name="id">id мероприятия</param>
+            <param name="name">название</param>
+            <param name="data">дата</param>
+            <param name="vremya">время</param>
+            <param name="kabinet">кабинет</param>
+        </member>
+        <member name="M:texnika.Meropriyatiya.ViewMeropPoTexnike(System.String)">
+            <summary>
+            Вывод мероприятий по технике
+            </summary>
+            <param name="idTex"></param>
+        </member>
+        <member name="M:texnika.DBconnect.Connect">
+            <summary>
+            Подключение к бд
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.DBconnect.CloseBd">
+            <summary>
+            отключение от бд
+            </summary>
+        </member>
+        <member name="M:texnika.DBconnect.ChekTables">
+            <summary>
+            Проверка на наличие всех таблиц в базе данных
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:texnika.Menu.components">
+            <summary>
+            Обязательная переменная конструктора.
+            </summary>
+        </member>
+        <member name="M:texnika.Menu.Dispose(System.Boolean)">
+            <summary>
+            Освободить все используемые ресурсы.
+            </summary>
+            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        </member>
+        <member name="M:texnika.Menu.InitializeComponent">
+            <summary>
+            Требуемый метод для поддержки конструктора — не изменяйте 
+            содержимое этого метода с помощью редактора кода.
+            </summary>
+        </member>
+        <member name="M:texnika.Program.Main">
+            <summary>
+            Главная точка входа для приложения.
+            </summary>
+        </member>
+        <member name="M:texnika.VidTexniki.View">
+            <summary>
+            Вывод видов техники
+            </summary>
+        </member>
+        <member name="M:texnika.VidTexniki.Add(System.String)">
+            <summary>
+            Добавление нового вида техники
+            </summary>
+            <param name="name">название вида</param>
+        </member>
+        <member name="M:texnika.VidTexniki.Delete(System.String)">
+            <summary>
+            Удаление вида техники
+            </summary>
+            <param name="id">id вида</param>
+        </member>
+        <member name="M:texnika.VidTexniki.Edit(System.String,System.String,System.String)">
+            <summary>
+            Изменение информации о виде
+            </summary>
+            <param name="id">id вида</param>
+            <param name="name">новое название</param>
+            <param name="oldName">старое название</param>
+        </member>
+        <member name="M:texnika.VidTexniki.ViewCombobox">
+            <summary>
+            Вывод видов техники в комбобокс
+            </summary>
+        </member>
+        <member name="M:texnika.VidTexniki.ViewComboboxFiltr">
+            <summary>
+            Вывод видов техники в комбобокс для фильтра
+            </summary>
+        </member>
+        <member name="F:texnika.VidTexnikiForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.VidTexnikiForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.VidTexnikiForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:texnika.Texniks.Views(System.String,System.String,System.String)">
+            <summary>
+            Вывод техники
+            </summary>
+            <param name="name"></param>
+            <param name="vid"></param>
+            <param name="spis"></param>
+        </member>
+        <member name="M:texnika.Texniks.View(System.String)">
+            <summary>
+            Вывод техники в поставке
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.Texniks.Delete(System.String)">
+            <summary>
+            Удаление
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Texniks.Add(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="postavka"></param>
+            <param name="name"></param>
+            <param name="vid"></param>
+            <param name="nomZ"></param>
+            <param name="nomI"></param>
+            <param name="price"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Texniks.Edit(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Изменение
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="vid"></param>
+            <param name="nomZ"></param>
+            <param name="nomI"></param>
+            <param name="price"></param>
+            <param name="nomZold"></param>
+            <param name="nomIold"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.Texniks.ViewComboboxPoVidy(System.String)">
+            <summary>
+            Вывод техники в комбобокс по виду
+            </summary>
+        </member>
+        <member name="M:texnika.Texniks.ViewComboboxRaspoloj(System.String)">
+            <summary>
+            Вывод в комбобокс для фильтра
+            </summary>
+        </member>
+        <member name="M:texnika.Texniks.Spisanie(System.String,System.String)">
+            <summary>
+            Изменение статуса списания
+            </summary>
+            <param name="idTex"></param>
+            <param name="statys"></param>
+        </member>
+        <member name="M:texnika.Texniks.ViewCombobox(System.String,System.String)">
+            <summary>
+            Вывод техники в комбобокс
+            </summary>
+        </member>
+        <member name="M:texnika.TexnikaInMerop.View(System.String)">
+            <summary>
+            Вывод техники на мероприятии
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.TexnikaInMerop.Add(System.String,System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="merop"></param>
+            <param name="tex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.TexnikaInMerop.Delete(System.String)">
+            <summary>
+            Удаление
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.TexnikaInAkt.View(System.String)">
+            <summary>
+            Вывод техники в акте
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:texnika.TexnikaInAkt.Add(System.String,System.String,System.String)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="akt"></param>
+            <param name="tex"></param>
+            <param name="prichina"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.TexnikaInAkt.Delete(System.String)">
+            <summary>
+            Удаление
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:texnika.TexnikaInAkt.Edit(System.String,System.String)">
+            <summary>
+            Измение
+            </summary>
+            <param name="nomer"></param>
+            <param name="prichina"></param>
+            <returns></returns>
+        </member>
+        <member name="F:texnika.TexniksView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.TexniksView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.TexniksView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:texnika.Zastavka.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:texnika.Zastavka.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:texnika.Zastavka.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
